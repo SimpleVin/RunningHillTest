@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0pQuY76+FQ/voIZFllZPpZumZPcSzrkJ95IayAXmjdbnwR/2U34YqP0g1nTR/SRYXL8KuelbF9HqTPeihi0eyA==",
+  "dgSpecHash": "OX6GpmnFrP/5iyO3xdWzbGA1QH0DqSYqe3tn7U0D2yriWpIWOTcMPSggJPHQAlfPUpAF3GwScK1ScWmxkimxSg==",
   "success": true,
-  "projectFilePath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastracture.csproj",
+  "projectFilePath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

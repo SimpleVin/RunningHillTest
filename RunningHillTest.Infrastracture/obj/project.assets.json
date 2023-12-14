@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastracture.csproj",
-      "projectName": "RunningHillTest.Infrastracture",
-      "projectPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastracture.csproj",
+      "projectUniqueName": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastructure.csproj",
+      "projectName": "RunningHillTest.Infrastructure",
+      "projectPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\vbmus\\.nuget\\packages\\",
       "outputPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\obj\\",
       "projectStyle": "PackageReference",
