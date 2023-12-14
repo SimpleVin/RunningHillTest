@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "x6V4zXYJXa17mYMnDrpysm+/a7s4OouV7CjihTLZsCI=",
+  "Source": "RunningHillTest.API",
+  "BasePath": "_content/RunningHillTest.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
