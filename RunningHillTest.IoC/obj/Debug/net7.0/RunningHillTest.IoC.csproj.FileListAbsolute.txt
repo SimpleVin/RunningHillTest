@@ -1,0 +1,12 @@
+C:\Dev\RunningHillTest\RunningHillTest.IoC\bin\Debug\net7.0\RunningHillTest.IoC.deps.json
+C:\Dev\RunningHillTest\RunningHillTest.IoC\bin\Debug\net7.0\RunningHillTest.IoC.dll
+C:\Dev\RunningHillTest\RunningHillTest.IoC\bin\Debug\net7.0\RunningHillTest.IoC.pdb
+C:\Dev\RunningHillTest\RunningHillTest.IoC\obj\Debug\net7.0\RunningHillTest.IoC.csproj.AssemblyReference.cache
+C:\Dev\RunningHillTest\RunningHillTest.IoC\obj\Debug\net7.0\RunningHillTest.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\RunningHillTest\RunningHillTest.IoC\obj\Debug\net7.0\RunningHillTest.IoC.AssemblyInfoInputs.cache
+C:\Dev\RunningHillTest\RunningHillTest.IoC\obj\Debug\net7.0\RunningHillTest.IoC.AssemblyInfo.cs
+C:\Dev\RunningHillTest\RunningHillTest.IoC\obj\Debug\net7.0\RunningHillTest.IoC.csproj.CoreCompileInputs.cache
+C:\Dev\RunningHillTest\RunningHillTest.IoC\obj\Debug\net7.0\RunningHillTest.IoC.dll
+C:\Dev\RunningHillTest\RunningHillTest.IoC\obj\Debug\net7.0\refint\RunningHillTest.IoC.dll
+C:\Dev\RunningHillTest\RunningHillTest.IoC\obj\Debug\net7.0\RunningHillTest.IoC.pdb
+C:\Dev\RunningHillTest\RunningHillTest.IoC\obj\Debug\net7.0\ref\RunningHillTest.IoC.dll

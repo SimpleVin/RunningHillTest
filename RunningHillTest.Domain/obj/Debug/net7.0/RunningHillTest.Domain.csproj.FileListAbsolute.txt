@@ -1,0 +1,12 @@
+C:\Dev\RunningHillTest\RunningHillTest.Domain\bin\Debug\net7.0\RunningHillTest.Domain.deps.json
+C:\Dev\RunningHillTest\RunningHillTest.Domain\bin\Debug\net7.0\RunningHillTest.Domain.dll
+C:\Dev\RunningHillTest\RunningHillTest.Domain\bin\Debug\net7.0\RunningHillTest.Domain.pdb
+C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\RunningHillTest.Domain.csproj.AssemblyReference.cache
+C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\RunningHillTest.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\RunningHillTest.Domain.AssemblyInfoInputs.cache
+C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\RunningHillTest.Domain.AssemblyInfo.cs
+C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\RunningHillTest.Domain.csproj.CoreCompileInputs.cache
+C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\RunningHillTest.Domain.dll
+C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\refint\RunningHillTest.Domain.dll
+C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\RunningHillTest.Domain.pdb
+C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\ref\RunningHillTest.Domain.dll

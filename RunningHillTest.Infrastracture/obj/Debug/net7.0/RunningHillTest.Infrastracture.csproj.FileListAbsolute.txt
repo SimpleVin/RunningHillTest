@@ -1,0 +1,12 @@
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\bin\Debug\net7.0\RunningHillTest.Infrastracture.deps.json
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\bin\Debug\net7.0\RunningHillTest.Infrastracture.dll
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\bin\Debug\net7.0\RunningHillTest.Infrastracture.pdb
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\RunningHillTest.Infrastracture.csproj.AssemblyReference.cache
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\RunningHillTest.Infrastracture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\RunningHillTest.Infrastracture.AssemblyInfoInputs.cache
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\RunningHillTest.Infrastracture.AssemblyInfo.cs
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\RunningHillTest.Infrastracture.csproj.CoreCompileInputs.cache
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\RunningHillTest.Infrastracture.dll
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\refint\RunningHillTest.Infrastracture.dll
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\RunningHillTest.Infrastracture.pdb
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\ref\RunningHillTest.Infrastracture.dll
