@@ -5,11 +5,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RunningHillTest.Domain.Entities.Common;
 
 namespace RunningHillTest.Domain.Entities
 {
     [Table("Word", Schema = "dbo")]
-    public class Word: BaseEntity
+    public class Word: BaseEntity<int>
     {
         [Description("This is the word")]
         public required string Name { get; set; }

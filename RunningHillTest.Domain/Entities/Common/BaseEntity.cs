@@ -7,16 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RunningHillTest.Domain.Entities
+namespace RunningHillTest.Domain.Entities.Common
 {
-    public class BaseEntity
+    public abstract class BaseEntity<T>
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Description("Uniquely identifies a record in the table")]
-        public int Id { get; set; }
+        [Required]
+        public required virtual T Id { get; set; }
 
         [Description("Keeps record of the date and time the record was added or created")]
         public DateTime CreatedDate { get; set; }
+
+        [Description("Keeps record of the date and time the record was last updated")]
+        public DateTime LastUpdatedDate { get; set; }
     }
 }

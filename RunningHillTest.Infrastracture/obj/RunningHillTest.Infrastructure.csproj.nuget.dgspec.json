@@ -4,14 +4,88 @@
     "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastructure.csproj": {
+    "C:\\Dev\\RunningHillTest\\RunningHillTest.Application\\RunningHillTest.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastructure.csproj",
-        "projectName": "RunningHillTest.Infrastructure",
-        "projectPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Dev\\RunningHillTest\\RunningHillTest.Application\\RunningHillTest.Application.csproj",
+        "projectName": "RunningHillTest.Application",
+        "projectPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Application\\RunningHillTest.Application.csproj",
         "packagesPath": "C:\\Users\\vbmus\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\obj\\",
+        "outputPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vbmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Dev\\RunningHillTest\\RunningHillTest.Domain\\RunningHillTest.Domain.csproj": {
+                "projectPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Domain\\RunningHillTest.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\RunningHillTest\\RunningHillTest.Domain\\RunningHillTest.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\RunningHillTest\\RunningHillTest.Domain\\RunningHillTest.Domain.csproj",
+        "projectName": "RunningHillTest.Domain",
+        "projectPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Domain\\RunningHillTest.Domain.csproj",
+        "packagesPath": "C:\\Users\\vbmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +118,99 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastructure.csproj",
+        "projectName": "RunningHillTest.Infrastructure",
+        "projectPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\vbmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vbmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Dev\\RunningHillTest\\RunningHillTest.Application\\RunningHillTest.Application.csproj": {
+                "projectPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Application\\RunningHillTest.Application.csproj"
+              },
+              "C:\\Dev\\RunningHillTest\\RunningHillTest.Domain\\RunningHillTest.Domain.csproj": {
+                "projectPath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Domain\\RunningHillTest.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

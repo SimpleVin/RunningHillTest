@@ -4,11 +4,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RunningHillTest.Domain.Entities.Common;
 
 namespace RunningHillTest.Domain.Entities
 {
     [Table("WordType", Schema = "dbo")]
-    public class WordType : BaseEntity
+    public class WordType : BaseEntity<Guid>
     {
         public required string Name { get; set; }
     }
