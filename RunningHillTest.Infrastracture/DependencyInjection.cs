@@ -12,7 +12,7 @@ namespace RunningHillTest.Infrastructure
             IConfiguration configuration)
         {
             services.AddDbContext<RunningHillDBContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("runningHillConnection"),
+                options.UseSqlServer(configuration.GetConnectionString("RunningHillConnection"),
                 b => b.MigrationsAssembly(typeof(RunningHillDBContext).Assembly.FullName)), ServiceLifetime.Transient);
 
             services.AddScoped<IRunningHillDBContext>(provider => provider.GetService<RunningHillDBContext>());

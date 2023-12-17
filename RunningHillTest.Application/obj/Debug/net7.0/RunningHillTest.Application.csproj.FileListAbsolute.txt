@@ -10,3 +10,6 @@ C:\Dev\RunningHillTest\RunningHillTest.Application\obj\Debug\net7.0\RunningHillT
 C:\Dev\RunningHillTest\RunningHillTest.Application\obj\Debug\net7.0\refint\RunningHillTest.Application.dll
 C:\Dev\RunningHillTest\RunningHillTest.Application\obj\Debug\net7.0\RunningHillTest.Application.pdb
 C:\Dev\RunningHillTest\RunningHillTest.Application\obj\Debug\net7.0\ref\RunningHillTest.Application.dll
+C:\Dev\RunningHillTest\RunningHillTest.Application\bin\Debug\net7.0\RunningHillTest.Domain.dll
+C:\Dev\RunningHillTest\RunningHillTest.Application\bin\Debug\net7.0\RunningHillTest.Domain.pdb
+C:\Dev\RunningHillTest\RunningHillTest.Application\obj\Debug\net7.0\RunningHillTest.Application.csproj.CopyComplete

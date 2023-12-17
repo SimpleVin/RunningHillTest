@@ -21,7 +21,8 @@ namespace RunningHillTest.Infrastructure.Persistance
 
         public Task<int> SaveChangesAsync()
         {
-            return base.SaveChangesAsync(); 
+            return base.SaveChangesAsync();
         }
+        
     }
 }

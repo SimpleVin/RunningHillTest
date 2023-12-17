@@ -15,7 +15,7 @@ namespace RunningHillTest.Domain.Entities.Common
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Description("Uniquely identifies a record in the table")]
         [Required]
-        public required virtual T Id { get; set; }
+        public virtual T Id { get; set; }
 
         [Description("Keeps record of the date and time the record was added or created")]
         public DateTime CreatedDate { get; set; }
