@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RunningHillTest.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1eebf6fde8aec3df9becbc7b49cab30dbd04b3da")]
 [assembly: System.Reflection.AssemblyProductAttribute("RunningHillTest.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RunningHillTest.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

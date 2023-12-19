@@ -10,3 +10,4 @@ C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\RunningHillTest.D
 C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\refint\RunningHillTest.Domain.dll
 C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\RunningHillTest.Domain.pdb
 C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\ref\RunningHillTest.Domain.dll
+C:\Dev\RunningHillTest\RunningHillTest.Domain\obj\Debug\net7.0\RunningHillTest.Domain.sourcelink.json

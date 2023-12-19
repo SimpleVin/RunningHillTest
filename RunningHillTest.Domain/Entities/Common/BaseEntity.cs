@@ -18,9 +18,9 @@ namespace RunningHillTest.Domain.Entities.Common
         public virtual T Id { get; set; }
 
         [Description("Keeps record of the date and time the record was added or created")]
-        public DateTime CreatedDate { get; set; }
+        public DateTime CreatedDate { get; set; } = DateTime.Now;
 
         [Description("Keeps record of the date and time the record was last updated")]
-        public DateTime LastUpdatedDate { get; set; }
+        public DateTime LastUpdatedDate { get; set; } = DateTime.Now;
     }
 }

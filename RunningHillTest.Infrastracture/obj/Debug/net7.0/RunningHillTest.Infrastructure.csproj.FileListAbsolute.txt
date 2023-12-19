@@ -17,3 +17,4 @@ C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\refint\Ru
 C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\RunningHillTest.Infrastructure.pdb
 C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\RunningHillTest.Infrastructure.genruntimeconfig.cache
 C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\ref\RunningHillTest.Infrastructure.dll
+C:\Dev\RunningHillTest\RunningHillTest.Infrastracture\obj\Debug\net7.0\RunningHillTest.Infrastructure.sourcelink.json

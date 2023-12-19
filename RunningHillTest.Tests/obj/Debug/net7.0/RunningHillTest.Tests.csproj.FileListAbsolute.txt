@@ -97,3 +97,4 @@ C:\Dev\RunningHillTest\RunningHillTest.Tests\obj\Debug\net7.0\refint\RunningHill
 C:\Dev\RunningHillTest\RunningHillTest.Tests\obj\Debug\net7.0\RunningHillTest.Tests.pdb
 C:\Dev\RunningHillTest\RunningHillTest.Tests\obj\Debug\net7.0\RunningHillTest.Tests.genruntimeconfig.cache
 C:\Dev\RunningHillTest\RunningHillTest.Tests\obj\Debug\net7.0\ref\RunningHillTest.Tests.dll
+C:\Dev\RunningHillTest\RunningHillTest.Tests\obj\Debug\net7.0\RunningHillTest.Tests.sourcelink.json
