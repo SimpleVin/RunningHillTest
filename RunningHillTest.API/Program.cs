@@ -1,6 +1,6 @@
 using RunningHillTest.Application.Mappers;
 using RunningHillTest.Infrastructure;
-
+using FluentValidation;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -22,6 +22,7 @@ builder.Services.AddCors(options =>
     });
 });
 
+var assembly = typeof(Program).Assembly;
 builder.Services.AddAutoMapper((typeof(Program).Assembly));
 //Dependency Injection
 builder.Services.AddPersistence(builder.Configuration);
@@ -33,7 +34,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+//builder.Services.AddValidatorsFromAssemblies(assembly);
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

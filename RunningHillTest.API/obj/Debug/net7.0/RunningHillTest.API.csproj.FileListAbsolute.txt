@@ -120,3 +120,6 @@ C:\Dev\RunningHillTest\RunningHillTest.API\bin\Debug\net7.0\AutoMapper.Extension
 C:\Dev\RunningHillTest\RunningHillTest.API\bin\Debug\net7.0\Scrutor.dll
 C:\Dev\RunningHillTest\RunningHillTest.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Filters.dll
 C:\Dev\RunningHillTest\RunningHillTest.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Dev\RunningHillTest\RunningHillTest.API\bin\Debug\net7.0\FluentValidation.dll
+C:\Dev\RunningHillTest\RunningHillTest.API\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Dev\RunningHillTest\RunningHillTest.API\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

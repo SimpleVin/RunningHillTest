@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X+YFpiVpfVEFR8VvQNH/XLUmaUXsHyQ9jVCh3IlVyQ8kbUdGTjjrYPYUGwjEIYL0292IV4sx7UEoSFNb9wmMxg==",
+  "dgSpecHash": "qgnSN+2qFVLdUtGfRtnsoV3MTwTcjvmdFF+UXY2v91fygi4vct2K/NbWvZ5RY5lJvdIGy0O3BVBbXo0Go2IusQ==",
   "success": true,
   "projectFilePath": "C:\\Dev\\RunningHillTest\\RunningHillTest.Infrastracture\\RunningHillTest.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\vbmus\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\vbmus\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\vbmus\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\vbmus\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\vbmus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\vbmus\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\vbmus\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

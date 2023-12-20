@@ -1,9 +1,11 @@
-﻿using MediatR;
+﻿using FluentValidation;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RunningHillTest.Application.Interfaces;
 using RunningHillTest.Application.Mappers;
+using RunningHillTest.Application.Validators;
 using RunningHillTest.Domain.Entities;
 using RunningHillTest.Domain.Interfaces;
 using RunningHillTest.Infrastructure.Persistance;
