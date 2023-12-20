@@ -10,11 +10,13 @@
   <mat-card>
     <mat-card-content>{{sentence}} </mat-card-content>
   </mat-card>
-
+<mat-card  *ngIf="show" @fadeIn @fadeOut style="color:darkgreen; font-size: 14;">{{message}}</mat-card>
   <br>
   <mat-divider></mat-divider>
   <br>
-    <button mat-raised-button disabled="{{isButtonEnabled}}" (click)="saveSentence()" color="primary">Save Sentence</button>
+    <button mat-raised-button disabled="{{isButtonEnabled}}" (click)="saveSentence()" color="primary"
+    matTooltip="Click to save sentence"
+    aria-label="Button that displays a tooltip when focused or hovered over">Save Sentence</button>
     <br>
     <br>
   <mat-divider></mat-divider>
@@ -24,13 +26,17 @@
   </mat-radio-group>
 
   <mat-divider></mat-divider>
-
-  <div style="width: 50px;  display: flex;  flex-direction: row; justify-content: space-between;">
-    <mat-chip-listbox class="mat-mdc-chip-set-stacked" aria-label="Color selection" style="display: inline;">      
-        <mat-chip-option  style="display: inline;" *ngFor="let word of wordList;" (selectionChange)="changeSelected(word.text)">{{ word.text }} </mat-chip-option>      
+  <br>
+  <div style="width: 90%;  display: flex;  flex-direction: row; justify-content: space-between;">
+    <mat-chip-listbox aria-label="Fish selection">   
+        <mat-chip-option *ngFor="let word of wordList;" (selectionChange)="changeSelected(word.text)">{{ word.text }} </mat-chip-option>      
     </mat-chip-listbox>
 
   </div>
+
+  <mat-list role="list">
+    <mat-list-item  *ngFor="let sentence of sentenceList;"  role="listitem">{{sentence.text}}</mat-list-item>
+  </mat-list>
 </div>
     <router-outlet></router-outlet>
   <footer>

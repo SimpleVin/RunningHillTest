@@ -11,6 +11,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import {MatDividerModule} from '@angular/material/divider';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatRadioModule ,MatButtonToggleModule,MatChipsModule,MatCardModule,MatButtonModule,MatDividerModule
+    MatRadioModule ,MatButtonToggleModule,MatChipsModule,MatCardModule,MatButtonModule,MatDividerModule,MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
