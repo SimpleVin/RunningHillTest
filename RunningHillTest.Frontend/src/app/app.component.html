@@ -4,7 +4,6 @@
   Time is {{ time | date: "MMM dd - hh:mm a"}}
 </p>
 <div id="MainView">
-  <h4>Word Types</h4>
 <div style="display: inline; padding: 10px;">
   <h4>Your sentence</h4>
   <mat-card>
@@ -33,7 +32,7 @@
     </mat-chip-listbox>
 
   </div>
-
+<h3>Sentences Created</h3>
   <mat-list role="list">
     <mat-list-item  *ngFor="let sentence of sentenceList;"  role="listitem">{{sentence.text}}</mat-list-item>
   </mat-list>

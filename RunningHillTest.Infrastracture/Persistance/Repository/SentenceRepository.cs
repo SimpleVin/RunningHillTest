@@ -40,7 +40,7 @@ namespace RunningHillTest.Infrastructure.Persistance.Repository
             
                 try
                 {
-                    return await _runningHillDBContext.Sentences.ToListAsync();
+                    return await _runningHillDBContext.Sentences.OrderByDescending(i=> i.CreatedDate).ToListAsync();
                 }
                 catch (Exception ex)
                 {
