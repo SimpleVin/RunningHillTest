@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using RunningHillTest.Application.Interfaces;
 using RunningHillTest.Domain.Entities;
 using RunningHillTest.Domain.Interfaces;
@@ -14,9 +15,11 @@ namespace RunningHillTest.Infrastructure.Persistance.Repository
     public class WordRepository : IWordRepository
     {
         private readonly IRunningHillDBContext _runningHillDBContext;
-        public WordRepository(IRunningHillDBContext runningHillDBContext)
+        private readonly ILogger<WordRepository> _logger;
+        public WordRepository(IRunningHillDBContext runningHillDBContext, ILogger<WordRepository> logger)
         {
             _runningHillDBContext = runningHillDBContext;
+            _logger = logger;
         }
 
         public async Task<List<Word>> GetWords()
@@ -40,16 +43,28 @@ namespace RunningHillTest.Infrastructure.Persistance.Repository
             }
             catch (Exception ex)
             {
-                Log.Error(ex, $"Error retrieving word types");
+                Log.Error(ex, $"Error retrieving word");
                 throw;
             }
         }
 
+        public async Task<List<Word>> GetWordsByWordTypeId(int id)
+        {
+            try
+            {
+                return await _runningHillDBContext.Words.Where(i => i.WordTypeId == id).ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error retrieving words");
+                throw;
+            }
+        }
+        
         public async Task<bool> SaveWordAsync(Word word)
         {
             try
             {
-
                 _runningHillDBContext.Words.Add(word);
                 var save =  await _runningHillDBContext.SaveChangesAsync();
                 if(save> 0) return true;
@@ -67,8 +82,6 @@ namespace RunningHillTest.Infrastructure.Persistance.Repository
                 Log.Error(ex, $"Error saving entity of type {typeof(Word).Name}");
                 throw;
             }
-
         }
-
     }
 }

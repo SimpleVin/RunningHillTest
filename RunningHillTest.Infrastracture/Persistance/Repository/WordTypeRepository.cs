@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using RunningHillTest.Application.Interfaces;
 using RunningHillTest.Domain.Entities;
 using RunningHillTest.Domain.Interfaces;
@@ -13,10 +14,12 @@ namespace RunningHillTest.Infrastructure.Persistance.Repository
 {
     public class WordTypeRepository : IWordTypeRepository
     {
+        private readonly ILogger<WordTypeRepository> _logger;
         private readonly IRunningHillDBContext _runningHillDBContext;
-        public WordTypeRepository(IRunningHillDBContext runningHillDBContext)
+        public WordTypeRepository(IRunningHillDBContext runningHillDBContext, ILogger<WordTypeRepository> logger)
         {
             _runningHillDBContext = runningHillDBContext;
+            _logger = logger;
         }
 
         public async Task<List<WordType>> GetWordTypes()

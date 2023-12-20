@@ -31,9 +31,11 @@ namespace RunningHillTest.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> CreateWord([FromBody] WordDto saveWord)
         {
-            //await _wordRepository.SaveWordAsync(word);
-
-            return Ok("Word created successfully");
+            var result = await _wordService.SaveWord(saveWord);
+            if (result)
+                return Ok("Word created successfully");
+            else
+                return BadRequest("Word failed to save.");
         }
 
         [HttpGet("GetWord/{id}")]
@@ -44,9 +46,23 @@ namespace RunningHillTest.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetWord(Guid id)
         {
-            var wordType = await _wordService.GetWord(id);
+            var result = await _wordService.GetWord(id);
 
-            return Ok(wordType);
+            return Ok(result);
+        }
+
+
+        [HttpGet("GetWordsByWordType/{id}")]
+        [Produces("application/json")]
+        [SwaggerResponseExample((int)HttpStatusCode.OK, typeof(List<WordDto>))]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> GetWordsByWordTypeId(int id)
+        {
+            var result = await _wordService.GetWordsByWordTypeId(id);
+
+            return Ok(result);
         }
 
         [HttpGet("GetWords")]
@@ -57,9 +73,9 @@ namespace RunningHillTest.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetWords()
         {
-            var wordTypes = await _wordService.GetAllWords();
+            var result = await _wordService.GetAllWords();
 
-            return Ok(wordTypes);
+            return Ok(result);
         }
 
 

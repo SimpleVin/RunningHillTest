@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using RunningHillTest.Application.Interfaces;
 using RunningHillTest.Application.Models;
+using RunningHillTest.Domain.Entities;
 using RunningHillTest.Domain.Interfaces;
+using RunningHillTest.Infrastructure.Persistance.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,24 +16,46 @@ namespace RunningHillTest.Infrastructure.Persistance.Services
     {
         private readonly IWordRepository _wordRepository;
         private readonly IMapper _mapper;
+        private object wordTypes;
+
         public WordService(IWordRepository wordRepository, IMapper mapper)
         {
             _wordRepository = wordRepository;
             _mapper = mapper;
         }
-        public Task<IEnumerable<WordDto>> GetAllWords()
+        public async Task<IEnumerable<WordDto>> GetAllWords()
         {
-            throw new NotImplementedException();
+            var words = await _wordRepository.GetWords();
+
+            if (words != null)
+                return _mapper.Map<List<WordDto>>(words);
+            else
+                return new List<WordDto>();
         }
 
-        public Task<WordDto> GetWord(Guid id)
+        public async Task<WordDto> GetWord(Guid id)
         {
-            throw new NotImplementedException();
+            var word = await _wordRepository.GetWordById(id);
+
+            if (word != null)
+                return _mapper.Map<WordDto>(word);
+            else
+                return new WordDto();
+        }
+        public async Task<List<WordDto>> GetWordsByWordTypeId(int id)
+        {
+            var words = await _wordRepository.GetWordsByWordTypeId(id);
+
+            if (words != null)
+                return _mapper.Map<List<WordDto>>(words);
+            else
+                return new List<WordDto>();
         }
 
-        public Task<bool> SaveWord(WordDto word)
+        public async Task<bool> SaveWord(WordDto word)
         {
-            throw new NotImplementedException();
+            var wordT = _mapper.Map<Word>(word);
+            return await _wordRepository.SaveWordAsync(wordT);
         }
     }
 }

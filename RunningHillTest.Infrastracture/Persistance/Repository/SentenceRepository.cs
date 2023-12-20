@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using RunningHillTest.Application.Interfaces;
 using RunningHillTest.Domain.Entities;
 using RunningHillTest.Domain.Interfaces;
@@ -14,9 +15,11 @@ namespace RunningHillTest.Infrastructure.Persistance.Repository
     public class SentenceRepository : ISentenceRepository
     {
         private readonly IRunningHillDBContext _runningHillDBContext;
-        public SentenceRepository(IRunningHillDBContext runningHillDBContext)
+        private readonly ILogger<SentenceRepository> _logger;
+        public SentenceRepository(IRunningHillDBContext runningHillDBContext, ILogger<SentenceRepository> logger)
         {
             _runningHillDBContext = runningHillDBContext;
+            _logger = logger;
         }
 
         public async Task<Sentence> GetSentenceById(Guid id)

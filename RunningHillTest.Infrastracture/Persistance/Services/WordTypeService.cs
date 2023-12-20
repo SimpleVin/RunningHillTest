@@ -43,9 +43,10 @@ namespace RunningHillTest.Infrastructure.Persistance.Services
                 return new List<WordTypeDto>();
         }
 
-        public Task<bool> SaveWordType(WordTypeDto sentence)
+        public async Task<bool> SaveWordType(WordTypeDto wordType)
         {
-            throw new NotImplementedException();
+            var wordT = _mapper.Map<WordType>(wordType);
+            return await _wordTypeRepository.SaveWordTypeAsync(wordT);
         }
     }
 }

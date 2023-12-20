@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using RunningHillTest.Application.Interfaces;
 using RunningHillTest.Application.Models;
+using RunningHillTest.Domain.Entities;
 using RunningHillTest.Domain.Interfaces;
+using RunningHillTest.Infrastructure.Persistance.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,19 +21,30 @@ namespace RunningHillTest.Infrastructure.Persistance.Services
             _sentenceRepository = sentenceRepository;
             _mapper = mapper;
         }
-        public Task<SentenceDto> GetSentence(Guid sentenceId)
+        public async Task<SentenceDto> GetSentence(Guid sentenceId)
         {
-            throw new NotImplementedException();
+            var words = await _sentenceRepository.GetSentenceById(sentenceId);
+
+            if (words != null)
+                return _mapper.Map<SentenceDto>(words);
+            else
+                return new SentenceDto();
         }
 
-        public Task<List<SentenceDto>> GetSentences()
+        public async Task<List<SentenceDto>> GetSentences()
         {
-            throw new NotImplementedException();
+            var sentences = await _sentenceRepository.GetSentences();
+
+            if (sentences != null)
+                return _mapper.Map<List<SentenceDto>>(sentences);
+            else
+                return new List<SentenceDto>();
         }
 
-        public Task<bool> SaveSentence(SentenceDto sentence)
+        public async Task<bool> SaveSentence(SentenceDto sentence)
         {
-            throw new NotImplementedException();
+            var sentenceT = _mapper.Map<Sentence>(sentence);
+            return await _sentenceRepository.SaveSentenceAsync(sentenceT);
         }
     }
 }

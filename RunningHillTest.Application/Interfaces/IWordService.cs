@@ -13,6 +13,7 @@ namespace RunningHillTest.Application.Interfaces
         Task<IEnumerable<WordDto>> GetAllWords();
         Task<WordDto> GetWord(Guid id);
         Task<bool> SaveWord(WordDto word);
+        Task<List<WordDto>> GetWordsByWordTypeId(int wordTypeId);
 
     }
 }

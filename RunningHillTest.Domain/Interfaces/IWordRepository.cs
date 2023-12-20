@@ -12,5 +12,6 @@ namespace RunningHillTest.Domain.Interfaces
         Task<bool> SaveWordAsync(Word word);
         Task<Word> GetWordById(Guid id);
         Task<List<Word>> GetWords();
+        Task<List<Word>> GetWordsByWordTypeId(int id);
     }
 }
