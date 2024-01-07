@@ -1,5 +1,5 @@
 export interface WordModel {
-    id: number;
+    id: string;
     text: string;
     wordTypeId: number;
   }

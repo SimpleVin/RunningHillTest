@@ -1,14 +1,10 @@
-import { Component } from '@angular/core';
-import { WordService } from './core/services/WordService';
+import {Component, ViewChild} from '@angular/core';
 import { WordModel } from './models/word.model';
-import { Observable } from 'rxjs';
 import { environment } from './core/environment/enviroment'; 
 import { HttpClient } from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
 import { WordTypeModel } from './models/wordtype.model';
 import { SentenceModel } from './models/sentence.model';
 import { transition, style, animate, trigger } from '@angular/animations';
-import {MatListModule} from '@angular/material/list';
 
 
 const enterTransition = transition(':enter', [
@@ -45,12 +41,15 @@ const fadeOut = trigger('fadeOut', [
   ]
 })
 export class AppComponent {
+  panelOpenState = false;
   private baseUrl = environment.BaseUrl;
   isButtonEnabled: boolean = true;
   selectedType : number = 0;
   sentence : string = "";
   message: string = "";
   show = false;
+  mySentence: WordModel[] = [];
+  currentSelectedWord: number = 0;
   wordList: WordModel[] = [];
   wordTypeList: WordTypeModel[] = [];
   sentenceList: SentenceModel[] = [];
@@ -60,7 +59,7 @@ export class AppComponent {
    this.getSentences();
 }
 
-getWords(){
+getWords(){ 
    this.http.get<WordModel[]>(this.baseUrl+'/word/GetWords').subscribe(
     (data)=>{
       this.wordList= data;
@@ -68,6 +67,7 @@ getWords(){
   );
 }
 loadWords(selectedWordType: number): void {
+  this.currentSelectedWord = selectedWordType;
   this.http.get<WordModel[]>(this.baseUrl+'/word/GetWordsByWordType/' + selectedWordType).subscribe(
     (data)=>{
       this.wordList = data;
@@ -75,15 +75,20 @@ loadWords(selectedWordType: number): void {
   );
 }
 
-changeSelected(selectedWord: string): void {
+changeSelected(selectedWord: string, id: string): void {
+  this.mySentence.push({ text: selectedWord, id: id, wordTypeId: this.currentSelectedWord});
+
   this.isButtonEnabled = false;
-    if(this.sentence != "")
-    this.sentence += " " + selectedWord; 
-    else
-    {
-      this.sentence = selectedWord;
-    }
+ 
 }
+remove(word: WordModel): void {
+  const index = this.mySentence.indexOf(word);
+ 
+  if (index >= 0) {
+    this.mySentence.splice(index, 1);
+  }
+}
+
 getWordTypes(){
   this.http.get<WordTypeModel[]>(this.baseUrl+'/wordType/GetWordTypes').subscribe(
    (data)=>{
@@ -91,7 +96,6 @@ getWordTypes(){
    }
  );
 }
-
 
 getSentences(){
   this.http.get<SentenceModel[]>(this.baseUrl+'/sentence/GetSentences').subscribe(
@@ -104,16 +108,29 @@ saveSentence()
 {
   if(!this.isButtonEnabled)
   {
-    const newSentence: SentenceModel = {
-      text : this.sentence,
+
+    var NewSentence: SentenceModel = {
+      text : "",
       words : ""
     }
-    this.http.post<string>(this.baseUrl+'/sentence/SaveSentence',newSentence).subscribe(data => {
+    this.mySentence.forEach(function(item, index, list) {
+        if(index === list.length - 1)
+          {
+            NewSentence.text +=item.text;
+            NewSentence.words += item.id;
+          }
+          else{
+            NewSentence.text += item.text + " ";
+            NewSentence.words += item.id + ",";
+          }
+        });
+   
+    this.http.post<string>(this.baseUrl+'/sentence/SaveSentence',NewSentence).subscribe(data => {
       this.show = true;
      this.message = data;
      
-   this.getSentences();
-  })
+  this.sentenceList.unshift({ text: NewSentence.text, words: ""});
+  });
   setTimeout(() => {
     this.show = false;
 }, 5000);
